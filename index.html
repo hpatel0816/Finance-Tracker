@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Finance Tracker</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id='main-div'>
+      <div id='top-bar'>
+        <h2 id='main-title'>Finance Tracker</h2>
+      </div>
+      <div id='div1'>
+        <div id='input-div'>
+          <div id='type-div'>
+            <div id='income-select' class='active'>Income</div>
+            <div id='expense-select'>Expense</div>
+          </div>
+          <hr id='hr1'>
+          <table id='input-table'>
+            <tr>
+              <th class='input-label'>Title:</th>
+              <th><input id='title' type='text' placeholder='Description'></input></th>
+            </tr>
+            <tr>
+              <th class='input-label'>Amount $:</th>
+              <th><input id='amount' type='number' placeholder='$0.00'></input></th>
+            </tr>
+            <tr>
+              <th class='input-label'>Date:</th>
+              <th><input id='date' type='text' placeholder='(DD/MM/YY)'></input></th>
+            </tr>
+          </table>
+          <button id='add-btn'>Add</button>
+        </div>
+        <div id='display-div'>
+          <div id='entry-title'>Data Entries</div>
+          <hr id='hr2'>
+          <div id='display-entry'>
+            <table id='title-output'></table>
+            <table id='amount-output'></table>
+            <table id='date-output'></table>
+          </div>
+        </div>
+      </div>
+      <div id='div2'>
+        <canvas id='pie-chart'></canvas>
+        <div id='display-info'>
+          <div id='container-div'>
+            <div id='income-display'>Income<br><span id='income'></span></div>
+            <div id='expense-display'>Expense<br><span id='expense'></span></div>
+          </div>
+          <div id='current-balance'>Balance<br><span id='balance'></span></div>
+        </div>
+        <div id='data-graph'>
+          <canvas id='myChart' width='550' height='370'></canvas>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <!--<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>-->
+    <script src="main.js"></script>
+    
+  </body>
+</html>
